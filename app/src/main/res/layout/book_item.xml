@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    >
+
+    <ImageView
+        android:id="@+id/book_image_view"
+        android:layout_height="128dp"
+        android:layout_width="96dp"
+        android:src="@mipmap/ic_launcher"
+        android:background="@color/colorPrimary"
+        android:layout_margin="8dp"
+
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:id="@+id/book_name_text_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Title"
+        android:textSize="24sp"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/auther_name_text_view"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Author"
+        android:textSize="16sp"
+
+        />
+
+    <TextView
+        android:id="@+id/year_text_view"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Year"
+        android:layout_weight="1"
+        android:paddingLeft="8dp"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+
+        />
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/description_text_view"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:text="this is description of book. Written by author this is dummy text to test functionality of max line feature of the text view"
+        android:maxLines="2"
+        android:textColor="#607D8B"
+        />
+
+</LinearLayout>
+
+</LinearLayout>
